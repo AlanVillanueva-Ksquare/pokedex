@@ -1,0 +1,224 @@
+body{
+    background-color: rgb(209, 209, 209);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .pokemon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 4px solid rgb(249, 154, 154);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .sprite {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .types {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+  }
+  
+  .type {
+    margin: 0 5px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .attack, .hp, .defense, .speed {
+    margin: 5px 0;
+  }
+  
+  .search {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 320px) {
+    
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+      }
+    .pokemon-card {
+      width: 140px;
+      height: 180px;
+      font-size: 12px;
+    }
+  }
+
+  span{
+    margin: 0.6em;
+    border-radius: 8px;
+    color: white;
+    padding: 0.1em 1em 0.1em 1em;
+  }
+
+  .fire{
+    background-color: #EE8130;
+  }
+  .normal{
+    background-color: #A8A77A;
+  }
+  .water{
+    background-color: #6390F0;
+  }
+  .electric{
+    background-color: #F7D02C;
+  }
+  .grass{
+    background-color: #7AC74C;
+  }
+  .ice{
+    background-color: #96D9D6;
+  }
+  .fighting{
+    background-color: #C22E28;
+  }
+  .poison{
+    background-color: #A33EA1;
+  }
+  .ground{
+    background-color: #E2BF65;
+  }
+  .flying{
+    background-color: #A98FF3;
+  }
+  .psychic{
+    background-color: #F95587;
+  }
+  .bug{
+    background-color: #A6B91A;
+  }
+  .rock{
+    background-color: #B6A136;
+  }
+  .ghost{
+    background-color: #735797;
+  }
+  .dragon{
+    background-color: #6F35FC;
+  }
+  .dark{
+    background-color: #705746;
+  }
+  .steel{
+    background-color: #B7B7CE;
+  }
+  .fairy{
+    background-color: #D685AD;
+  }
+
+
+  .pokemon-card:has(.fire:first-child){
+    background-color: #f2d1b7;
+  }
+
+  .pokemon-card:has(.normal:first-child){
+    background-color: #dcdcd7;
+  }
+
+  .pokemon-card:has(.water:first-child){
+    background-color: #b9cefb;
+  }
+
+  .pokemon-card:has(.electric:first-child){
+    background-color: #f8eec5;
+  }
+
+  .pokemon-card:has(.grass:first-child){
+    background-color: #d4f7c0;
+  }
+
+  .pokemon-card:has(.ice:first-child){
+    background-color: #e7faf9;
+  }
+
+  .pokemon-card:has(.fighting:first-child){
+    background-color: #f4c9c8;
+  }
+
+  .pokemon-card:has(.poison:first-child){
+    background-color: #f7c6f6;
+  }
+
+  .pokemon-card:has(.ground:first-child){
+    background-color: #f6e7c2;
+  }
+
+  .pokemon-card:has(.flying:first-child){
+    background-color: #d4c9f3;
+  }
+
+  .pokemon-card:has(.psychic:first-child){
+    background-color: #fac6d6;
+  }
+
+  .pokemon-card:has(.bug:first-child){
+    background-color: #e6f286;
+  }
+
+  .pokemon-card:has(.rock:first-child){
+    background-color: #f8f0c5;
+  }
+
+  .pokemon-card:has(.ghost:first-child){
+    background-color: #d7c0f6;
+  }
+
+  .pokemon-card:has(.dragon:first-child){
+    background-color: #dccfff;
+  }
+
+  .pokemon-card:has(.dark:first-child){
+    background-color: #f6ccb0;
+  }
+
+  .pokemon-card:has(.steel:first-child){
+    background-color: #f9f9ff;
+  }
+
+  .pokemon-card:has(.fairy:first-child){
+    background-color: #ffd5ea;
+  }
